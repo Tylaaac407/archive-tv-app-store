@@ -12,4 +12,4 @@ services:
     restart: unless-stopped
     extra_hosts:
       - "host.docker.internal:host-gateway"
-    command: "TCP-LISTEN:8080,fork,reuseaddr TCP:host.docker.internal:18095"
+    command: "TCP-LISTEN:8080,reuseaddr TCP:host.docker.internal:18095"
