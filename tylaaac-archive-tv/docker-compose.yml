@@ -10,6 +10,12 @@ services:
   web:
     image: alpine/socat:latest
     restart: unless-stopped
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
-    command: "TCP-LISTEN:8080,reuseaddr TCP:host.docker.internal:18095"
+    command: "TCP-LISTEN:8080,reuseaddr TCP:archive-tv:8080"
+    networks:
+      - default
+      - archive-tv
+
+networks:
+  archive-tv:
+    external: true
+    name: archive-tv_default
