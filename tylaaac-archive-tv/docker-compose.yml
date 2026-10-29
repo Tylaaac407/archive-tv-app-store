@@ -7,7 +7,7 @@ services:
       APP_PORT: 8080
       PROXY_AUTH_ADD: "false"
 
-  web:
+    web:
     image: alpine/socat:latest
     restart: unless-stopped
     command: "TCP-LISTEN:8080,reuseaddr TCP:archive-tv:8080"
