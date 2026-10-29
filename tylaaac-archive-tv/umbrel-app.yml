@@ -1,0 +1,14 @@
+manifestVersion: 1
+id: tylaaac-archive-tv
+name: Archive TV
+tagline: Your own 24/7 Internet Archive television
+icon: https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/tv.svg
+category: Media
+version: "1.0.0"
+port: 18095
+description: >-
+  A personal television experience powered by Internet Archive.
+  Browse channels and stream videos directly from the Archive.
+developer: Tylaaac407
+website: https://archive.org
+dependencies: []
